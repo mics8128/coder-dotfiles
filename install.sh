@@ -14,5 +14,8 @@ else
     echo yadm already installed
 fi
 
+# fix locale issues
+sudo locale-gen "en_US.UTF-8"
+
 yadm clone git@github.com:mics8128/dotfiles-yadm.git
 yadm bootstrap
