@@ -4,7 +4,7 @@ BIN_PATH=$HOME/.local/bin
 
 # 設定 安裝時的 PATH
 mkdir -p $BIN_PATH
-PATH=~/.local/bin:$PATH
+PATH=$BIN_PATH:$PATH
 
 # 安裝 yadm (sh)
 if [[ ! -f $(which yadm) ]]; then
